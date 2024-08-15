@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D2A66EA4-C1C9-4D6F-B415-0398C1AE399F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0EE2AC44-07C4-4892-B4D5-3CD7C543CB4C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stocks/PortfolioManager/PortfolioManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "sellStocks(stocksManager:stockItem:money:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0EE2AC44-07C4-4892-B4D5-3CD7C543CB4C - 17559ce89ed277e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Stocks.PortfolioManager.sellStocks(stocksManager: Stocks.StocksManager, stockItem: Stocks.StockItem, money: Swift.Double) -&gt; Swift.Bool"
+                  moduleName = "Stocks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/webstar/Desktop/cpastore_projects/Stocks/Stocks/PortfolioManager/PortfolioManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1008">
+               </Location>
+               <Location
+                  uuid = "0EE2AC44-07C4-4892-B4D5-3CD7C543CB4C - 17559ce89ed277e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Stocks.PortfolioManager.sellStocks(stocksManager: Stocks.StocksManager, stockItem: Stocks.StockItem, money: Swift.Double) -&gt; Swift.Bool"
+                  moduleName = "Stocks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/webstar/Desktop/cpastore_projects/Stocks/Stocks/PortfolioManager/PortfolioManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1028">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C8AA124-98A4-4028-A4E2-DE1C4D3084DB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stocks/PortfolioManager/PortfolioManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "sellStocks(stocksManager:stockItem:money:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6C8AA124-98A4-4028-A4E2-DE1C4D3084DB - 17559ce89ed26ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Stocks.PortfolioManager.sellStocks(stocksManager: Stocks.StocksManager, stockItem: Stocks.StockItem, money: Swift.Double) -&gt; Swift.Bool"
+                  moduleName = "Stocks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/webstar/Desktop/cpastore_projects/Stocks/Stocks/PortfolioManager/PortfolioManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "1700">
+               </Location>
+               <Location
+                  uuid = "6C8AA124-98A4-4028-A4E2-DE1C4D3084DB - 17559ce89ed26ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Stocks.PortfolioManager.sellStocks(stocksManager: Stocks.StocksManager, stockItem: Stocks.StockItem, money: Swift.Double) -&gt; Swift.Bool"
+                  moduleName = "Stocks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/webstar/Desktop/cpastore_projects/Stocks/Stocks/PortfolioManager/PortfolioManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "1752">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6DB697EE-92B6-409E-8293-62DC168AE0E2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stocks/PortfolioManager/PortfolioManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "sellStocks(stocksManager:stockItem:money:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
