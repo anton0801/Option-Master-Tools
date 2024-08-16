@@ -33,6 +33,16 @@
 		EE3F6BBA2C6D528B00FB192B /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F6BB92C6D528B00FB192B /* PortfolioView.swift */; };
 		EE3F6BBD2C6E0ECB00FB192B /* StockDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F6BBC2C6E0ECB00FB192B /* StockDetailsView.swift */; };
 		EE3F6BC02C6E220100FB192B /* BuySellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F6BBF2C6E220100FB192B /* BuySellView.swift */; };
+		EE3F6BDB2C6FD9B100FB192B /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = EE3F6BDA2C6FD9B100FB192B /* SwiftyJSON */; };
+		EE3F6BDE2C6FD9CD00FB192B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EE3F6BDD2C6FD9CD00FB192B /* Alamofire */; };
+		EE3F6BE12C6FD9E900FB192B /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = EE3F6BE02C6FD9E900FB192B /* AppsFlyerLib */; };
+		EE3F6BE52C6FDB6500FB192B /* TipsInvestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F6BE42C6FDB6500FB192B /* TipsInvestingView.swift */; };
+		EE3F6BE82C6FDCE100FB192B /* InvestmentGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F6BE72C6FDCE100FB192B /* InvestmentGuide.swift */; };
+		EE3F6BEA2C6FDF3400FB192B /* TipsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F6BE92C6FDF3400FB192B /* TipsDetailsView.swift */; };
+		EE3F6BEC2C6FE4F600FB192B /* StocksAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F6BEB2C6FE4F600FB192B /* StocksAppDelegate.swift */; };
+		EE3F6BEE2C6FE6C700FB192B /* LoadingStocksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F6BED2C6FE6C700FB192B /* LoadingStocksManager.swift */; };
+		EE3F6BF02C6FEB4000FB192B /* StocksPreV.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F6BEF2C6FEB4000FB192B /* StocksPreV.swift */; };
+		EE3F6BF22C6FF4CB00FB192B /* MainViewSec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F6BF12C6FF4CB00FB192B /* MainViewSec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +72,13 @@
 		EE3F6BB92C6D528B00FB192B /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		EE3F6BBC2C6E0ECB00FB192B /* StockDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsView.swift; sourceTree = "<group>"; };
 		EE3F6BBF2C6E220100FB192B /* BuySellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySellView.swift; sourceTree = "<group>"; };
+		EE3F6BE42C6FDB6500FB192B /* TipsInvestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsInvestingView.swift; sourceTree = "<group>"; };
+		EE3F6BE72C6FDCE100FB192B /* InvestmentGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentGuide.swift; sourceTree = "<group>"; };
+		EE3F6BE92C6FDF3400FB192B /* TipsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsDetailsView.swift; sourceTree = "<group>"; };
+		EE3F6BEB2C6FE4F600FB192B /* StocksAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAppDelegate.swift; sourceTree = "<group>"; };
+		EE3F6BED2C6FE6C700FB192B /* LoadingStocksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStocksManager.swift; sourceTree = "<group>"; };
+		EE3F6BEF2C6FEB4000FB192B /* StocksPreV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksPreV.swift; sourceTree = "<group>"; };
+		EE3F6BF12C6FF4CB00FB192B /* MainViewSec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewSec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +86,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3F6BDB2C6FD9B100FB192B /* SwiftyJSON in Frameworks */,
+				EE3F6BE12C6FD9E900FB192B /* AppsFlyerLib in Frameworks */,
+				EE3F6BDE2C6FD9CD00FB192B /* Alamofire in Frameworks */,
 				EE3F6BA52C6D24E900FB192B /* SDWebImageSwiftUI in Frameworks */,
 				EE3F6B922C6D1DD900FB192B /* Lottie in Frameworks */,
 			);
@@ -96,6 +116,7 @@
 		EE3F6B762C6D117000FB192B /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
+				EE3F6BE62C6FDCD500FB192B /* Tips */,
 				EE3F6BB12C6D46A300FB192B /* ProfileManager */,
 				EE3F6BAB2C6D466F00FB192B /* PortfolioManager */,
 				EE3F6BA22C6D23FD00FB192B /* Info.plist */,
@@ -127,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				EE3F6B862C6D181200FB192B /* LoadingStocksView.swift */,
+				EE3F6BED2C6FE6C700FB192B /* LoadingStocksManager.swift */,
+				EE3F6BEF2C6FEB4000FB192B /* StocksPreV.swift */,
 			);
 			path = Loading;
 			sourceTree = "<group>";
@@ -152,6 +175,7 @@
 		EE3F6B932C6D1DDF00FB192B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EE3F6BE22C6FDB4400FB192B /* Tips */,
 				EE3F6BBB2C6E0EB800FB192B /* StockDetails */,
 				EE3F6BB82C6D527200FB192B /* PortfolioManager */,
 				EE3F6BAE2C6D469400FB192B /* ProfileView */,
@@ -176,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				EE3F6B9A2C6D1F4B00FB192B /* MainView.swift */,
+				EE3F6BF12C6FF4CB00FB192B /* MainViewSec.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -237,6 +262,24 @@
 			path = BuySell;
 			sourceTree = "<group>";
 		};
+		EE3F6BE22C6FDB4400FB192B /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				EE3F6BE42C6FDB6500FB192B /* TipsInvestingView.swift */,
+				EE3F6BE92C6FDF3400FB192B /* TipsDetailsView.swift */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
+		EE3F6BE62C6FDCD500FB192B /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				EE3F6BE72C6FDCE100FB192B /* InvestmentGuide.swift */,
+				EE3F6BEB2C6FE4F600FB192B /* StocksAppDelegate.swift */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,6 +299,9 @@
 			packageProductDependencies = (
 				EE3F6B912C6D1DD900FB192B /* Lottie */,
 				EE3F6BA42C6D24E900FB192B /* SDWebImageSwiftUI */,
+				EE3F6BDA2C6FD9B100FB192B /* SwiftyJSON */,
+				EE3F6BDD2C6FD9CD00FB192B /* Alamofire */,
+				EE3F6BE02C6FD9E900FB192B /* AppsFlyerLib */,
 			);
 			productName = Stocks;
 			productReference = EE3F6B742C6D117000FB192B /* Stocks.app */;
@@ -288,6 +334,9 @@
 			packageReferences = (
 				EE3F6B902C6D1DD900FB192B /* XCRemoteSwiftPackageReference "lottie-spm" */,
 				EE3F6BA32C6D24E900FB192B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				EE3F6BD92C6FD9B100FB192B /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				EE3F6BDC2C6FD9CD00FB192B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EE3F6BDF2C6FD9E900FB192B /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
 			);
 			productRefGroup = EE3F6B752C6D117000FB192B /* Products */;
 			projectDirPath = "";
@@ -323,20 +372,27 @@
 				EE3F6BC02C6E220100FB192B /* BuySellView.swift in Sources */,
 				EE3F6B8D2C6D199800FB192B /* keys.swift in Sources */,
 				EE3F6BB52C6D474F00FB192B /* UserManager.swift in Sources */,
+				EE3F6BE52C6FDB6500FB192B /* TipsInvestingView.swift in Sources */,
 				EE3F6B9B2C6D1F4B00FB192B /* MainView.swift in Sources */,
 				EE3F6B8A2C6D185100FB192B /* StocksManager.swift in Sources */,
 				EE3F6BA72C6D33C700FB192B /* NavigatableView.swift in Sources */,
 				EE3F6BB02C6D46A000FB192B /* ProfileView.swift in Sources */,
+				EE3F6BEC2C6FE4F600FB192B /* StocksAppDelegate.swift in Sources */,
 				EE3F6BBA2C6D528B00FB192B /* PortfolioView.swift in Sources */,
 				EE3F6BAD2C6D468100FB192B /* PortfolioManager.swift in Sources */,
 				EE3F6B872C6D181200FB192B /* LoadingStocksView.swift in Sources */,
 				EE3F6BB72C6D506200FB192B /* HoldingItem.swift in Sources */,
 				EE3F6B7A2C6D117000FB192B /* ContentView.swift in Sources */,
+				EE3F6BEE2C6FE6C700FB192B /* LoadingStocksManager.swift in Sources */,
 				EE3F6BAA2C6D43ED00FB192B /* MarketView.swift in Sources */,
+				EE3F6BF22C6FF4CB00FB192B /* MainViewSec.swift in Sources */,
 				EE3F6B962C6D1DEA00FB192B /* LottieView.swift in Sources */,
 				EE3F6BBD2C6E0ECB00FB192B /* StockDetailsView.swift in Sources */,
 				EE3F6B782C6D117000FB192B /* StocksApp.swift in Sources */,
 				EE3F6B8F2C6D1B7A00FB192B /* StockItem.swift in Sources */,
+				EE3F6BE82C6FDCE100FB192B /* InvestmentGuide.swift in Sources */,
+				EE3F6BEA2C6FDF3400FB192B /* TipsDetailsView.swift in Sources */,
+				EE3F6BF02C6FEB4000FB192B /* StocksPreV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,14 +530,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stocks/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Option: Master Tools";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,14 +565,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stocks/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Option: Master Tools";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -574,6 +628,30 @@
 				minimumVersion = 3.1.1;
 			};
 		};
+		EE3F6BD92C6FD9B100FB192B /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		EE3F6BDC2C6FD9CD00FB192B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.8.1;
+			};
+		};
+		EE3F6BDF2C6FD9E900FB192B /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.15.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -586,6 +664,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EE3F6BA32C6D24E900FB192B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		EE3F6BDA2C6FD9B100FB192B /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE3F6BD92C6FD9B100FB192B /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		EE3F6BDD2C6FD9CD00FB192B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE3F6BDC2C6FD9CD00FB192B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		EE3F6BE02C6FD9E900FB192B /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE3F6BDF2C6FD9E900FB192B /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

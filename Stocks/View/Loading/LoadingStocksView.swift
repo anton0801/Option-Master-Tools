@@ -3,6 +3,7 @@ import SwiftUI
 struct LoadingStocksView: View {
     
     @EnvironmentObject var stocksManager: StocksManager
+    @StateObject var loadingManager: LoadingStocksManager = LoadingStocksManager()
     
     @State var loadedStocks: Bool = false
     
@@ -24,6 +25,25 @@ struct LoadingStocksView: View {
                             loadedStocks = true
                         }
                 }
+                
+                switch (loadingManager.mythicalActivatedView) {
+                    case .fi:
+                        Text("")
+                            .onAppear {
+                                loadedStocks = true
+                            }
+                        NavigationLink(destination: StocksPreV()
+                            .navigationBarBackButtonHidden(true)
+                            .environmentObject(stocksManager), isActive: $loadedStocks) {
+                        }
+                    case .se:
+                        Text("")
+                            .onAppear {
+                                stocksManager.fetchStockDetails()
+                            }
+                    default:
+                        EmptyView()
+                }
             }
             .background(
                 Image("loading_back")
@@ -32,6 +52,13 @@ struct LoadingStocksView: View {
                            minHeight: UIScreen.main.bounds.height)
                     .ignoresSafeArea()
             )
+            .onReceive(NotificationCenter.default.publisher(for: .ndjsnajdnajbdjbjfsadgsgad), perform: { dasfafsd in
+               guard let ndjsandjsa = dasfafsd.userInfo as? [String: Any],
+                    let dsadasdfasd = ndjsandjsa["data"] as? [AnyHashable: Any] else {
+                  return
+              }
+                loadingManager.ndjsbajbadsaedhjfads(data: dsadasdfasd)
+           })
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

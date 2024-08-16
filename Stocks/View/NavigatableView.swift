@@ -58,6 +58,17 @@ struct NavigatableView: View {
                     }
                 }
                 .tag(3)
+            
+            TipsInvestingView()
+                .tabItem {
+                    if selectedTab == 4 {
+                        Image("tips_icon_active")
+                    } else {
+                        Image("tips_icon")
+                    }
+                    Text("Tips")
+                }
+                .tag(4)
         }
     }
 }

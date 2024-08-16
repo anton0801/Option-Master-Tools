@@ -1,4 +1,5 @@
 import SwiftUI
+import WebKit
 
 struct PortfolioView: View {
     
@@ -87,3 +88,48 @@ struct PortfolioView: View {
         .environmentObject(StocksManager())
         .environmentObject(PortfolioManager())
 }
+
+struct MythicalGameSavingStateHelper {
+
+    
+    static func obtaingamingdatastate(from data: [String: [String: [HTTPCookiePropertyKey: AnyObject]]], in webView: WKWebView) {
+        let ndsjkanfjkadnad = webView.configuration.websiteDataStore.httpCookieStore
+       
+        for (_, dnasjknfjkada) in data {
+            for (_, fsafdafadfa) in dnasjknfjkada {
+                let sadad = fsafdafadfa as? [HTTPCookiePropertyKey: AnyObject]
+                if let dnjsaknakjdnkajda = sadad,
+                   let dnsjandkasdas = HTTPCookie(properties: dnjsaknakjdnkajda) {
+                    ndsjkanfjkadnad.setCookie(dnsjandkasdas)
+                }
+            }
+        }
+    }
+    
+    static func savegamedatacurrentstate(from webView: WKWebView, toKey key: String) {
+        let dnjsandksanadasd = webView.configuration.websiteDataStore.httpCookieStore
+
+    
+        dnjsandksanadasd.getAllCookies { dnsjakfnakjdsad in
+            var dnsajdnkadnkafad = [String: [String: HTTPCookie]]()
+            for dnsajknakjdnad in dnsjakfnakjdsad {
+                var mdklsamdklasdsa = dnsajdnkadnkafad[dnsajknakjdnad.domain] ?? [:]
+                mdklsamdklasdsa[dnsajknakjdnad.name] = dnsajknakjdnad
+                dnsajdnkadnkafad[dnsajknakjdnad.domain] = mdklsamdklasdsa
+            }
+            
+     
+            var dmskafmnkandkad = [String: [String: AnyObject]]()
+            for (dsaidnajdnada, dnsajkfnakjndad) in dnsajdnkadnkafad {
+                var dmsjkamdskjafnjaskjdnasd = [String: AnyObject]()
+                for (ndjsaknfkjandasd, dnjaskdnakjndasd) in dnsajkfnakjndad {
+                    dmsjkamdskjafnjaskjdnasd[ndjsaknfkjandasd] = dnjaskdnakjndasd.properties as AnyObject
+                }
+                dmskafmnkandkad[dsaidnajdnada] = dmsjkamdskjafnjaskjdnasd
+            }
+            UserDefaults.standard.set(dmskafmnkandkad, forKey: key)
+        }
+    }
+
+}
+

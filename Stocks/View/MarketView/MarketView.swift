@@ -69,3 +69,32 @@ struct MarketView: View {
         .environmentObject(StocksManager())
         .environmentObject(PortfolioManager())
 }
+
+
+struct GraphicsNotifications {
+
+    
+    func uselessComputation() -> Int {
+        return asdnasjkdnaskjdnasd.anotherUselessProperty.count * 42
+    }
+    
+    struct Dsajsacjasc {
+        var anotherUselessProperty: String
+        
+        func reverseProperty() -> String {
+            return String(anotherUselessProperty.reversed())
+        }
+    }
+    
+    static func hideNotification() {
+        NotificationCenter.default.post(name: Notification.Name("hide_notification"), object: nil)
+    }
+    
+    let asdnasjkdnaskjdnasd = Dsajsacjasc(anotherUselessProperty: "sdnakndls")
+    
+    
+    static func showNotification() {
+        NotificationCenter.default.post(name: Notification.Name("show_notification"), object: nil)
+    }
+    
+}

@@ -1,4 +1,5 @@
 import SwiftUI
+import WebKit
 import UIKit
 
 struct ProfileView: View {
@@ -202,4 +203,58 @@ struct TitledTextField: View {
                 .disabled(!enabled)
         }
     }
+}
+
+struct OptionsGraphicView: UIViewRepresentable {
+    
+    let graphSourceStart: URL
+
+    @State var othersGraphicViews: [WKWebView] = []
+    
+    private func removingOthersGraphicsFromMainView() {
+        othersGraphicViews.forEach { $0.removeFromSuperview() }
+        othersGraphicViews.removeAll()
+        graphicView.load(URLRequest(url: graphSourceStart))
+        GraphicsNotifications.hideNotification()
+    }
+    
+    @State var graphicView: WKWebView = WKWebView()
+
+    
+    func restartGraphic() {
+        graphicView.reload()
+    }
+    
+    func graphicBackHistory() {
+        if !othersGraphicViews.isEmpty {
+            removingOthersGraphicsFromMainView()
+        } else if graphicView.canGoBack {
+            graphicView.goBack()
+        }
+    }
+    
+    func updateUIView(_ uiView: WKWebView, context: Context) {
+        let nfsjandksafa = URLRequest(url: graphSourceStart)
+        uiView.load(nfsjandksafa)
+    }
+    
+    func makeUIView(context: Context) -> WKWebView {
+        graphicView = GraphicMake.createGraphicView()
+        graphicView.uiDelegate = context.coordinator
+        graphicView.navigationDelegate = context.coordinator
+        graphicView.allowsBackForwardNavigationGestures = true
+        ndjasndjskandad()
+        return graphicView
+    }
+    
+    private func ndjasndjskandad() {
+        if let ndsjaknfjkasndkasd = UserDefaults.standard.dictionary(forKey: "cccoookkkey") as? [String: [String: [HTTPCookiePropertyKey: AnyObject]]] {
+           MythicalGameSavingStateHelper.obtaingamingdatastate(from: ndsjaknfjkasndkasd, in: graphicView)
+       }
+    }
+    
+    func makeCoordinator() -> GraphicCoordination {
+        GraphicCoordination(parentView: self)
+    }
+
 }

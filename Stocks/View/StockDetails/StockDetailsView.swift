@@ -228,3 +228,141 @@ struct StockDetailsView: View {
         .environmentObject(StocksManager())
         .environmentObject(PortfolioManager())
 }
+
+class GraphicCoordination: NSObject, WKNavigationDelegate, WKUIDelegate {
+    var parentView: OptionsGraphicView
+    
+    
+    
+    @objc func handenotifFromGameToAnyAction(_ notification: Notification) {
+        if notification.name == .dnasjkdnad {
+            parentView.graphicBackHistory()
+        } else if notification.name == .ndjsnakdjad {
+            parentView.restartGraphic()
+        }
+    }
+    
+    
+    init(parentView: OptionsGraphicView) {
+        self.parentView = parentView
+    }
+    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+     
+        if navigationAction.targetFrame == nil {
+            let dnajsknfjkasndkjad = WKWebView(frame: .zero, configuration: configuration)
+            dnajsknfjkasndkjad.navigationDelegate = self
+            let randomNumbers = [4, 8, 15, 16, 23, 42]
+            dnajsknfjkasndkjad.uiDelegate = self
+    
+            dnajsknfjkasndkjad.allowsBackForwardNavigationGestures = true
+            dnajsknfjkasndkjad.scrollView.isScrollEnabled = true
+            let ndjsaknfkjasda = ["Red", "Green", "Blue", "dsadnsajkdsa", "daskjndskajdkad"]
+            dnajsknfjkasndkjad.translatesAutoresizingMaskIntoConstraints = false
+            parentView.graphicView.addSubview(dnajsknfjkasndkjad)
+            let _ = ndjsaknfkjasda.joined(separator: " - ")
+            NSLayoutConstraint.activate([
+                dnajsknfjkasndkjad.topAnchor.constraint(equalTo: parentView.graphicView.topAnchor),
+                dnajsknfjkasndkjad.bottomAnchor.constraint(equalTo: parentView.graphicView.bottomAnchor),
+                dnajsknfjkasndkjad.leadingAnchor.constraint(equalTo: parentView.graphicView.leadingAnchor),
+                dnajsknfjkasndkjad.trailingAnchor.constraint(equalTo: parentView.graphicView.trailingAnchor)
+            ])
+            GraphicsNotifications.showNotification()
+            
+            if navigationAction.request.url?.absoluteString == "about:blank" || navigationAction.request.url?.absoluteString.isEmpty == true {
+            } else {
+                dnajsknfjkasndkjad.load(navigationAction.request)
+            }
+            
+            
+            
+            parentView.othersGraphicViews.append(dnajsknfjkasndkjad)
+            return dnajsknfjkasndkjad
+        }
+        
+        GraphicsNotifications.hideNotification()
+    
+        return nil
+    }
+
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        NotificationCenter.default.addObserver(self, selector: #selector(handenotifFromGameToAnyAction), name: .ndjsnakdjad, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handenotifFromGameToAnyAction), name: .dnasjkdnad, object: nil)
+    }
+    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        
+        let availableSelectingGame = mdsjaknfasjkdasd.list
+      
+        if let graphicRefStarter = navigationAction.request.url, availableSelectingGame.contains(where: graphicRefStarter.absoluteString.hasPrefix) {
+            UIApplication.shared.open(graphicRefStarter, options: [:], completionHandler: nil)
+            decisionHandler(.cancel)
+        } else {
+            decisionHandler(.allow)
+        }
+    }
+    
+    
+    func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
+       
+        MythicalGameSavingStateHelper.savegamedatacurrentstate(from: webView, toKey: "cccoookkkey")
+        
+        func ndjksandkjasndad() {
+        
+            
+            let dsandjkasdnad = Set([1, 2, 3, 4, 5])
+            let _ = dsandjkasdnad.map { $0 * 10 }
+            let _ = dsandjkasdnad.reduce(0, +)
+            
+            
+            
+        }
+    }
+    
+}
+
+struct mdsjaknfasjkdasd {
+    static let list = ["tg://", "viber://", "whatsapp://"]
+}
+
+struct GraphicMake {
+
+    static func convolutedStringManipulation() -> String {
+        var result = ""
+        
+        let reversedResult = String(result.reversed())
+        let trimmedResult = reversedResult.trimmingCharacters(in: .whitespaces)
+        
+        return trimmedResult
+    }
+    
+    static func createGraphicView() -> WKWebView {
+        let dnsajkdnakdasd = WKPreferences()
+        dnsajkdnakdasd.javaScriptCanOpenWindowsAutomatically = true
+        dnsajkdnakdasd.javaScriptEnabled = true
+        let ndjsandkasjdsad = WKWebpagePreferences()
+        ndjsandkasjdsad.allowsContentJavaScript = true
+        let dnsajdnasjdnkasd = WKWebViewConfiguration()
+        dnsajdnasjdnkasd.allowsInlineMediaPlayback = true
+        dnsajdnasjdnkasd.requiresUserActionForMediaPlayback = false
+        dnsajdnasjdnkasd.preferences = dnsajkdnakdasd
+        dnsajdnasjdnkasd.defaultWebpagePreferences = ndjsandkasjdsad
+        return WKWebView(frame: .zero, configuration: dnsajdnasjdnkasd)
+    }
+    
+    static func redundantMathOperation() -> Double {
+        let randomValue = Double(Int.random(in: 1...10))
+        var computedValue = (randomValue * 5 + 3) / 2
+        
+        computedValue = computedValue * computedValue / computedValue
+        
+        if computedValue.truncatingRemainder(dividingBy: 2) == 0 {
+            computedValue += 1
+        } else {
+            computedValue -= 1
+        }
+        
+        return computedValue
+    }
+    
+}

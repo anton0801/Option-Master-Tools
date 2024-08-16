@@ -1,5 +1,6 @@
 import Foundation
 import Combine
+import SwiftyJSON
 import UIKit
 
 class UserManager: ObservableObject {
@@ -100,4 +101,69 @@ class UserManager: ObservableObject {
         return paths[0]
     }
     
+}
+
+class OptionMainCheckResulter: OptionChecker {
+    func returnIfValid(validDat: OptionsSecMainGlavR) -> Bool {
+        return validDat.dnsakjda != nil
+    }
+}
+
+protocol OptionChecker {
+    func returnIfValid(validDat: OptionsSecMainGlavR) -> Bool
+}
+
+protocol MainOptionsCalbackableR {
+    
+    var dnasjdnasjbcasbjdfasd: URL {
+        get
+        set
+    }
+    var dnasjdbasjda: ([String: Any]?) -> Void {
+        get
+        set
+    }
+    
+    func obtainstocksdatadetails(params: [String: Any])
+    
+}
+
+struct OptionsMainB: Encodable {
+    var dbashjbdja: JSON
+    
+    private enum CodingKeys: String, CodingKey {
+        case dbashjbdja = "appsflyer"
+    }
+}
+
+
+struct OptionsData {
+    var identicId: String?
+    var iDfAu: String
+    let convesuccessedData: [AnyHashable: Any]
+}
+
+
+extension String {
+    static let didiidiffuuuusssaaa = "idfa_user_app"
+    static let nadjsnajkcjansd = "client_id"
+    static let jdsiajdkasndjkasnd = "s_a_g"
+    static let notttfiiisrsrs = "notFirstStart"
+    static let dsadbajsdbnajhda = "dsabdhjasbdjhasdddsadsdad"
+    static let liinkinnninggggsaveeeddd = "l_save"
+    static let ndjskandkjasndkjasnd = "session_id"
+    static let dsafasda = "dsadafadsdad"
+    static let sspsppllslslp = "ssppll"
+}
+
+struct OptionsSecMainGlavR: Decodable {
+    var ndsjakndka: String
+    var ndsjaknda: String
+    var dnsakjda: String?
+
+    private enum CodingKeys: String, CodingKey {
+        case ndsjakndka = "client_id"
+        case ndsjaknda = "session_id"
+        case dnsakjda = "response"
+    }
 }
