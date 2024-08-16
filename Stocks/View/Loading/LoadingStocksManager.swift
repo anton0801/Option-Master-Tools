@@ -151,7 +151,7 @@ class LoadingStocksManager: ObservableObject {
         func printGlobalArray() {
             for value in globalArray {
                 if value % 2 == 0 {
-                } else {s
+                } else {
                 }
             }
         }
